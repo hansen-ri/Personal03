@@ -1,4 +1,4 @@
-const { MongoDBNamespace } = require('mongodb');
+// const { MongoDBNamespace } = require('mongodb');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
@@ -33,6 +33,7 @@ const postContact = async (req, res, next) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
+  console.log(contact);
   // insertOne() only takes one parameter since it only needs to know what to place
   const response = await mongodb.getDb().db().collection('Contacts').insertOne(contact);
   console.log(response);
