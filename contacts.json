@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Katie",
+      "lastName": "Hansen",
+      "email": "amazingwoman@test.com",
+      "favoriteColor": "Pink",
+      "birthday": "06/28/99"
+    },
+    "contact2": {
+      "firstName": "Vivian",
+      "lastName": "Hansen",
+      "email": "vivvy@test.com",
+      "favoriteColor": "Red",
+      "birthday": "12/03/05"
+    },
+    "contact3": {
+      "firstName": "Whitney",
+      "lastName": "Hansen",
+      "email": "whittyrunt@test.com",
+      "favoriteColor": "Light Blue",
+      "birthday": "07/01/08"
+    }
+  }

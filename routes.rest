@@ -1,0 +1,53 @@
+// LOCALHOST
+GET http://localhost:8080/Contacts
+###
+GET http://localhost:8080/Contacts/62a4c2a7675f9ab6bd3f7858
+
+###
+GET http://localhost:8080/Contacts/62a4c2a7675f9ab6bd3f7859
+
+###
+GET http://localhost:8080/Contacts/62a4c2a7675f9ab6bd3f785a
+
+# C.R.U.D. PRACTICE PERSONAL03  
+###
+POST http://localhost:8080/Contacts HTTP/1.1
+
+content-type: application/json
+
+{
+    "firstName": "Katie",
+    "lastName": "Hansen",
+    "email": "katieh@gmail.com",
+    "favoriteColor": "Pink",
+    "birthday": "06/28/1999"
+}
+
+###
+PUT http://localhost:8080/Contacts/62a4c2a7675f9ab6bd3f7858 HTTP/1.1
+
+content-type: application/json
+
+{
+    "firstName": "Stephanie",
+    "lastName": "Colvin",
+    "email": "stephCol@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "06/28/1969"
+}
+
+###
+DELETE http://localhost:8080/Contacts/62a4c2a7675f9ab6bd3f785a HTTP/1.1
+
+# PRODUCTION DEPLOY HEROKU 
+###
+GET http://cse341-personal-02.herokuapp.com/Contacts
+
+### 
+GET http://cse341-personal-02.herokuapp.com/Contacts/62a4c2a7675f9ab6bd3f7858
+
+### 
+GET http://cse341-personal-02.herokuapp.com/Contacts/62a4c2a7675f9ab6bd3f7859
+
+###
+GET http://cse341-personal-02.herokuapp.com/Contacts/62a4c2a7675f9ab6bd3f785a
